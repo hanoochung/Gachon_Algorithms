@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 int main(void) {
-    int N, M;//N ¼ıÀÚ°³¼ö, M ±¸°£°³¼ö
-    int arr[5000];//ÃÑ ±¸°£
-    int start = 0, end = 0;//start,end ±¸°£ ÃÖ¼ÒÃÖ´ë°ª
+    int N, M;//N ìˆ«ìê°œìˆ˜, M êµ¬ê°„ê°œìˆ˜
+    int arr[5000];//ì´ êµ¬ê°„
+    int start = 0, end = 0;//start,end êµ¬ê°„ ìµœì†ŒìµœëŒ€ê°’
     scanf("%d %d", &N, &M);
 
     for (int i = 0; i < N; i++) {
@@ -25,8 +25,8 @@ int main(void) {
                 section_max = arr[i];
             if (section_min > arr[i])
                 section_min = arr[i];
-            if (section_max - section_min > mid) { //ÀÌÀü ±¸°£À» ÇÏ³ªÀÇ sectionÀ¸·Î Ãë±Ş
-                section_count++;  //section ¼ö Ãß°¡
+            if (section_max - section_min > mid) { //ì´ì „ êµ¬ê°„ì„ í•˜ë‚˜ì˜ sectionìœ¼ë¡œ ì·¨ê¸‰
+                section_count++;  //section ìˆ˜ ì¶”ê°€
                 section_max = arr[i];
                 section_min = arr[i];
             }
