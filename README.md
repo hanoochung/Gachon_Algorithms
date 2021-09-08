@@ -1,2 +1,2 @@
-# Algorithms_Study
-Algorithms Study Codes
+# Algorithms_Code
+Algorithms
