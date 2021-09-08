@@ -22,9 +22,9 @@ int average(int num, int* list) {
         return ((average / 10) + 1) * 10;
     else
         return average;
-    //if (average % 10 >= 5)  //¹İ¿Ã¸² 5º¸´Ù Å¬ ¶§
+    //if (average % 10 >= 5)  //ë°˜ì˜¬ë¦¼ 5ë³´ë‹¤ í´ ë•Œ
     //    return ((average / 10) + 1) * 10;
-    //else    //¹İ¿Ã¸² 5º¸´Ù ÀÛÀ» ¶§
+    //else    //ë°˜ì˜¬ë¦¼ 5ë³´ë‹¤ ì‘ì„ ë•Œ
     //    return (average / 10) * 10;
 }
 int main() {
