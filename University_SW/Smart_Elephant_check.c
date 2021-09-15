@@ -51,7 +51,7 @@ void dynamic(int count) {
 }
 
 int main() {
-    FILE* filePtr = fopen("input.txt", "r");    //file open
+    FILE* filePtr = fopen("Smart_Elephant.txt", "r");    //file open
     if (filePtr == NULL) {                      //file open chack
         printf("input.txt File Open Error\n");
         return -1;
