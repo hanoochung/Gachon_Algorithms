@@ -40,7 +40,7 @@ void sort(int* arr, int count) {
 int main() {
     FILE* filePtr = fopen("input.txt", "r");    //file open
     if (filePtr == NULL) {                      //file open chack
-        printf("input.txt File Open Error\n");
+        printf("pancake.txt File Open Error\n");
         return -1;
     }
 
