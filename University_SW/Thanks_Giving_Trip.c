@@ -28,7 +28,7 @@ int average(int num, int* list) {
     //    return (average / 10) * 10;
 }
 int main() {
-    FILE* filePtr = fopen("input.txt", "r");    //file open
+    FILE* filePtr = fopen("Thanks_Giving_Trip.txt", "r");    //file open
     if (filePtr == NULL) {                      //file open chack
         printf("input.txt File Open Error\n");
         return -1;
