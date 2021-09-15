@@ -1,4 +1,4 @@
-// 201835526 ¡§«ˆøÏ
+// 201835526 √Å¬§√á√∂¬ø√¨
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,7 +36,7 @@ void dynamic(struct sentence* sample, int lengx, int lengy) {
 }
 
 int main() {
-    FILE* filePtr = fopen("input.txt", "r");    //file open
+    FILE* filePtr = fopen("Distinct_Subsequences.txt", "r");    //file open
     if (filePtr == NULL) {                      //file open chack
         printf("input.txt File Open Error\n");
         return -1;
