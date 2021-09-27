@@ -12,7 +12,7 @@ struct sentence {
 void dynamic(struct sentence* sample, int lengx, int lengy) {
     printf("%s\n", sample->x); //test
     printf("%s\n", sample->y); //test
-    int** sheet = malloc(sizeof(int) * lengy + 1);  //Y
+    int** sheet = malloc(sizeof(int*) * (lengy + 1));  //Y
     for (int i = 0; i < lengy + 1; i++) {
         sheet[i] = (int*)malloc(sizeof(int) * lengx + 1);   //X
     }
@@ -33,6 +33,12 @@ void dynamic(struct sentence* sample, int lengx, int lengy) {
         printf("\n"); //test
     }
     printf("%d\n\n", sheet[lengy][lengx]); //print count of able matching sentence
+    
+    for (int i = 0; i < lengy + 1; i++) {
+        free(sheet[i]);
+    }
+    free(sheet);
+    sheet = NULL;
 }
 
 int main() {
@@ -45,8 +51,8 @@ int main() {
     fscanf(filePtr, "%d", &count);
     while (0 < count) {
         struct sentence* sample = malloc(sizeof(struct sentence));
-        fscanf(filePtr, "%s", &sample->x);
-        fscanf(filePtr, "%s", &sample->y);
+        fscanf(filePtr, "%s", sample->x);
+        fscanf(filePtr, "%s", sample->y);
         dynamic(sample, strlen(sample->x), strlen(sample->y));
         free(sample);
         count--;
